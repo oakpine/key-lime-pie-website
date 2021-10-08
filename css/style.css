@@ -1,0 +1,99 @@
+/*@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamBook.ttf') format('truetype'),
+    url('fonts/GothamBold.ttf') format('truetype'),
+    url('fonts/GothamMedium.ttf') format('truetype');
+}*/
+
+* {
+    font-family: 'Gotham';
+}
+
+p, table {
+    font-family: 'Gotham Light', sans-serif; 
+}
+
+table thead {
+    font-family: 'Gotham';
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+
+.nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    padding: 14px 35px;
+}
+
+.ingredient_list {
+    float: left;
+    overflow: hidden;
+    vertical-align: center;
+}
+
+.ingredient_list .ingredients {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+    background-color: yellowgreen;
+    font-family: 'Gotham';
+}
+
+.nav a:hover, .ingredient_list:hover .ingredients {
+    background-color: forestgreen;
+}
+
+.ingredient_name {
+    display: none;
+    position: absolute;
+    background-color: yellowgreen;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.ingredient_name a {
+    float: none;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.ingredient_name a:hover {
+    background-color: forestgreen;
+  }
+
+.ingredient_list:hover .ingredient_name {
+    display: block;
+  }
