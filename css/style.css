@@ -6,6 +6,10 @@ p, table {
     font-family: 'Gotham Light', sans-serif; 
 }
 
+p{
+    font-size: 25px;
+}
+
 table thead {
     font-family: 'Gotham';
     font-weight: 500;
@@ -116,7 +120,7 @@ h2, h3 {
 body, html {
     height: 100%;
 }
-.mega-image {
+.mega-image-index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/bigkeylime.jpeg");
     height: 70%;
     background-position: center;
@@ -124,6 +128,16 @@ body, html {
     background-size: cover;
     position: relative;
   }
+
+  .mega-image-key_limes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/key-lime-benefits_1000x.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
 
 .mega-text {
     text-align: center;
