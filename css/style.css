@@ -152,8 +152,10 @@ body, html {
 }
 
 .key-lime-page-img {
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin-left: 500px;
+    margin-right: 500px;
+}
 
+.key-lime-caption {
+    text-align: center;
 }
