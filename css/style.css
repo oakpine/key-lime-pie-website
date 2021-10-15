@@ -152,7 +152,8 @@ body, html {
 }
 
 .key-lime-page-img {
-    object-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
     
 
 }
