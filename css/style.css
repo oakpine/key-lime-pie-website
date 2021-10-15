@@ -9,6 +9,8 @@ p, table {
 p{
     font-size: 25px;
     line-height: 1.0;
+    margin-left: 0.5;
+    margin-right: 0.5;
 }
 
 table thead {
