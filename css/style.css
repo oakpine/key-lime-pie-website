@@ -152,7 +152,7 @@ body, html {
 }
 
 .key-lime-page-img {
-    position: relative;
-    align-content: center;
+    object-position: 50% 50%;
+    
 
 }
