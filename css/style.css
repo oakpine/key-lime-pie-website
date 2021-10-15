@@ -81,6 +81,21 @@ h2, h3 {
     z-index: 1;
 }
 
+.ingredients-on-page {
+    font-size: 25px; 
+    position: absolute; 
+    color: darkgreen;
+    text-align: center;
+}
+
+.ingredients-on-page a:hover{
+    color: yellowgreen;
+    font-size: 25px; 
+    position: absolute; 
+    text-align: center;
+}
+
+
 .ingredient_name a {
     float: none;
     color: white;
