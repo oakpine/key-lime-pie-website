@@ -1,7 +1,5 @@
-// add image parallax
 $(document).ready(function(){
-    $('.parallax').parallax();
+    $('.parallax').parallax(); // image parallax
+    $(".dropdown-trigger").dropdown(); // navbar dropdown
+    $('.carousel').carousel(); // carousel
 });
-
-// navbar dropdown
-$(".dropdown-trigger").dropdown();
