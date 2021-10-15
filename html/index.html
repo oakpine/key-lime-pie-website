@@ -15,24 +15,26 @@
       
       <title>Key Lime Pie Supremacy</title>
     </head>
-    <!--Navigation Bar-->
-    <div class="nav">
-      <ul>
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/history.html">History</a></li>
-        <div class="ingredient_list">
-          <button class="ingredients">Ingredients</button>
-          <div class="ingredient_name">
-            <a href="../html/key_limes.html">Key Lime</a>
-            <a href="../html/condensed_milk.html">Condensed Milk</a>
-            <a href="../html/crust.html">Crust</a>
-            <a href ="../html/eggs.html">Eggs</a>
-            <a href ="../html/sugar.html">Sugar</a>
-          </div>
-        </div>  
-        <li><a href="../html/world.html">Around the World</a></li> 
-      </ul>
-    </div>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="../html/key_limes.html">Key Lime</a></li>
+      <li><a href="../html/condensed_milk.html">Condensed Milk</a></li>
+      <li><a href="../html/crust.html">Crust</a></li>
+      <li><a href ="../html/eggs.html">Eggs</a></li>
+      <li><a href ="../html/sugar.html">Sugar</a></li>
+    </ul>
+
+    <nav>
+      <div class="nav-wrapper nav">
+        <a href="index.html" class="brand-logo">Key Lime Pie</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../html/history.html">History</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ingredients</a></li>
+          <li><a href="../html/world.html">Around the World</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- This is the body-->
     <body>
      <!--Header for the page-->
