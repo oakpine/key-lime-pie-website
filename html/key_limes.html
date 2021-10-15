@@ -2,17 +2,43 @@
   <html>
     <head>
       <!--Import materialize.css via CDN link-->
+       <!--This template provides the boilerplate required to start a project with MaterializeCSS
+      -->
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
+      <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+      <!--Import materialize.css via CDN link-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+      <!--If you import more than 1 cSS file, be aware that the styles are applied in the order they are linked-->
+      <link rel="stylesheet" href="../css/style.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
       <title>Key Limes</title>
     </head>
 
     <!-- This is the body-->
+  
     <body>
-        <div class="mega-image-key-limes">
+      <div class="nav">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/history.html">History</a></li>
+          <div class="ingredient_list">
+            <button class="ingredients">Ingredients</button>
+            <div class="ingredient_name">
+              <a href="../html/key_limes.html">Key Lime</a>
+              <a href="../html/condensed_milk.html">Condensed Milk</a>
+              <a href="../html/crust.html">Crust</a>
+              <a href ="../html/eggs.html">Eggs</a>
+              <a href ="../html/sugar.html">Sugar</a>
+            </div>
+          </div>  
+          <li><a href="../html/world.html">Around the World</a></li> 
+        </ul>
+      </div>
+
+
+      <div class="mega-image-key-limes">
            <div class="mega-text">
               <h1> Key Limes, <em>Citrus aurantiifolia</em></h3> 
             </div>
@@ -26,14 +52,22 @@
         and more resistant to disease. However, key limes are more aromatic and acidic than
         Persian limes, which is why they're used to make key lime pie!</p>
 
-        <figure>
-            <img src="../images/key_vs_persian_limes.jpg" alt="key limes vs persian limes">
-            <figcaption>Key limes (left) vs Persian limes (right)</figcaption>
+        <div class="key-lime-page-img">
+          <figure>
+            <p style="text-align:center;"></p><img src="../images/key_vs_persian_limes.jpg" alt="key limes vs persian limes" width=500px>
+            <div class="key-lime-caption">
+              <figcaption>Key limes (left) vs Persian limes (right)</figcaption>
+            </div>
         </figure>
+        </div>
+        
         
         <p>Both the juice and the zest of limes are used in key lime pie.</p>
 
-        <img src="../images/juice_and_zest.jpg" alt="lime juice and zest" width=300px>
+        <div class="key-lime-page-img">
+          <p style="text-align:center;"></p><img src="../images/juice_and_zest.jpg" alt="lime juice and zest" width=500px>
+        </div>
+        
       
       <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -8,6 +8,9 @@ p, table {
 
 p{
     font-size: 25px;
+    line-height: 1.0;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 table thead {
@@ -146,4 +149,13 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.key-lime-page-img {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.key-lime-caption {
+    text-align: center;
 }
