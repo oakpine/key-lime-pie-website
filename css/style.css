@@ -81,6 +81,13 @@ h2, h3 {
     text-align: center;
 }
 
+.ingredients-on-page a{
+    font-size: 25px; 
+    position: absolute; 
+    color: darkgreen;
+    text-align: center;
+} 
+
 .ingredients-on-page a:hover{
     color: yellowgreen;
     font-size: 25px; 
