@@ -8,6 +8,7 @@ p, table {
 
 p{
     font-size: 25px;
+    line-height: 1.0;
 }
 
 table thead {
@@ -151,5 +152,5 @@ body, html {
 .key-lime-page-img {
     position: relative;
     align-content: center;
-    
+
 }
