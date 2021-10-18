@@ -159,6 +159,10 @@ body, html {
     color: white;
 }
 
+.nav-logo {
+    margin-left: 10px;
+}
+
 .key-lime-page-img {
     margin-left: 500px;
     margin-right: 500px;
