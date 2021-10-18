@@ -144,7 +144,7 @@ body, html {
   }
 
 .mega-image-eggs {
-    background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/mega_egg.JPG");
+    background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/raw-eggs.jpeg");
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,6 +160,9 @@ body, html {
     color: black;
 }
 
+.mega-image-eggs:hover {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/mega_egg.JPG");
+}
 .mega-image-key-limes {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/key-lime-benefits_1000x.jpg");
     height: 70%;
