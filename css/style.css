@@ -163,9 +163,12 @@ body, html {
     margin-left: 10px;
 }
 
-.key-lime-page-img {
-    margin-left: 500px;
-    margin-right: 500px;
+.page-img {
+    display: block;
+    margin: auto;
+   /* overflow: scroll; */
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .key-lime-caption {
