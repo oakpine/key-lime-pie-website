@@ -107,7 +107,7 @@ body, html {
     height: 100%;
 }
 .parallax-container {
-    height: 750px;
+    height: 100%;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -118,7 +118,7 @@ body, html {
   .parallax-container h1 {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;  
