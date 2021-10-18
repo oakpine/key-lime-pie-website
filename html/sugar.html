@@ -18,20 +18,29 @@
 
     <!-- This is the body-->
     <body>
-      <div class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="html/history.html">History</a></li>
-          <div class="ingredient_list">
-            <button class="ingredients">Ingredients</button>
-            <div class="ingredient_name">
-              <a href="html/ingredients.html">Key Lime</a>
-              <a href="condensed_milk.html">Condensed Milk</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>        
-        </ul>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../html/key_limes.html">Key Limes</a></li>
+        <li><a href="../html/condensed_milk.html">Condensed Milk</a></li>
+        <li><a href="../html/crust.html">Crust</a></li>
+        <li><a href ="../html/eggs.html">Eggs</a></li>
+        <li><a href ="../html/sugar.html">Sugar</a></li>
+      </ul>
+
+      <!-- Navigation Bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper nav">
+            <a href="index.html" class="brand-logo nav-logo">Key Lime Pie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="../html/history.html">History</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ingredients</a></li>
+              <li><a href="../html/world.html">Around the World</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
+
       <h2>Why Granulated Sugar?</h2>
       <p>Granulated sugar gives the filling of a key lime pie a sweet taste. It also can be added to the crust of a key lime pie for an extra depth of flavor. Granulated sugar also dissolves more easily than other sugars, so it can be easily incorporated into any aspect of the dessert. The sweetness balances out the tartness of the limes. </p>
 
@@ -52,6 +61,8 @@
       <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script src="../scripts/script.js"></script>
 
     </body>
   </html>
