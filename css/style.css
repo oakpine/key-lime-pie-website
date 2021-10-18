@@ -6,16 +6,27 @@ p, table {
     font-family: 'Gotham Light', sans-serif; 
 }
 
-p{
+p {
     font-size: 25px;
     line-height: 1.0;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table thead {
     font-family: 'Gotham';
     font-weight: 500;
+}
+
+th, td {
+    text-align: center;
 }
 
 h1 {
@@ -180,9 +191,12 @@ body, html {
     margin-left: 10px;
 }
 
-.key-lime-page-img {
-    margin-left: 500px;
-    margin-right: 500px;
+.page-img {
+    display: block;
+    margin: auto;
+   /* overflow: scroll; */
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .key-lime-caption {
