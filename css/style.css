@@ -166,7 +166,7 @@ body, html {
 .page-img {
     display: block;
     margin: auto;
-   /* overflow: scroll; */
+    overflow: scroll; 
     max-width: 600px;
     max-height: 600px;
 }
