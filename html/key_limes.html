@@ -19,27 +19,32 @@
     <!-- This is the body-->
   
     <body>
-      <div class="nav">
-        <ul>  
-          <li><a href="../html/index.html">Home</a></li>
-          <li><a href="../html/history.html">History</a></li>
-          <div class="ingredient_list">
-            <button class="ingredients">Ingredients</button>
-            <div class="ingredient_name">
-              <a href="../html/key_limes.html">Key Lime</a>
-              <a href="../html/condensed_milk.html">Condensed Milk</a>
-              <a href="../html/crust.html">Crust</a>
-              <a href ="../html/eggs.html">Eggs</a>
-              <a href ="../html/sugar.html">Sugar</a>
-            </div>
-          </div>  
-          <li><a href="../html/world.html">Around the World</a></li> 
-        </ul>
-      </div>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../html/key_limes.html">Key Limes</a></li>
+        <li><a href="../html/condensed_milk.html">Condensed Milk</a></li>
+        <li><a href="../html/crust.html">Crust</a></li>
+        <li><a href ="../html/eggs.html">Eggs</a></li>
+        <li><a href ="../html/sugar.html">Sugar</a></li>
+      </ul>
 
+      <!-- Navigation Bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper nav">
+            <a href="index.html" class="brand-logo nav-logo">Key Lime Pie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="../html/history.html">History</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ingredients</a></li>
+              <li><a href="../html/world.html">Around the World</a></li>
+              <li><a href="../html/variations.html">Variations</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>>
 
       <div class="mega-image-key-limes">
-           <div class="eggs-mega-text">
+           <div class="mega-text">
               <h1> Key Limes, <em>Citrus aurantiifolia</em></h3> 
             </div>
         </div>
@@ -53,26 +58,23 @@
         Persian limes, which is why they're used to make key lime pie!</p>
 
         
-          <figure>
-            <div class="page-img">
-              <img src="../images/key_vs_persian_limes.jpg" alt="key limes vs persian limes" width=500px>
-          </div>
-            <div class="key-lime-caption">
-              <figcaption>Key limes (left) vs Persian limes (right)</figcaption>
-            </div>
+        <figure>
+          <img class="page-img" src="../images/key_vs_persian_limes.jpg" alt="key limes vs persian limes" width=500px>
+          <figcaption>Key limes (left) vs Persian limes (right)</figcaption>
         </figure>
+        
         
         
         <p>Both the juice and the zest of limes are used in key lime pie.</p>
 
-        <div class="page-img">
-          <p style="text-align:center;"></p><img src="../images/juice_and_zest.jpg" alt="lime juice and zest" width=500px>
-        </div>
+        <img class="page-img" src="../images/juice_and_zest.jpg" alt="lime juice and zest" width=500px>
         
       
       <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script src="../scripts/script.js"></script>
 
     </body>
   </html>

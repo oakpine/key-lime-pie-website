@@ -17,45 +17,54 @@
     </head>
         
     <body>
-        <!--Nav Bar-->
-        <div class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="html/history.html">History</a></li>
-              <div class="ingredient_list">
-                <button class="ingredients">Ingredients</button>
-                <div class="ingredient_name">
-                  <a href="html/ingredients.html">Key Lime</a>
-                  <a href="condensed_milk.html">Condensed Milk</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>        
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../html/key_limes.html">Key Limes</a></li>
+        <li><a href="../html/condensed_milk.html">Condensed Milk</a></li>
+        <li><a href="../html/crust.html">Crust</a></li>
+        <li><a href ="../html/eggs.html">Eggs</a></li>
+        <li><a href ="../html/sugar.html">Sugar</a></li>
+      </ul>
+
+      <!-- Navigation Bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper nav">
+            <a href="index.html" class="brand-logo nav-logo">Key Lime Pie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="../html/history.html">History</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ingredients</a></li>
+              <li><a href="../html/world.html">Around the World</a></li>
+              <li><a href="../html/variations.html">Variations</a></li>
             </ul>
           </div>
-        <h1>The History of Key Lime Pie</h1>
-        <!--Introduces the fact that Key Lime Pie may be from New York-->
-        <h2>The Classic Southern Dessert is from...New York?</h2>
-        <p>
-            That's right! Although there is no definitive answer as to where Key Lime Pie originates, there is strong evidence that shows that it could be originally from New York! Research shows that there was no Key Lime Pie or similar dessert recipe in the Florida region (it used to be widely believed that Key Lime Pie originated from Florida, as Key Lime Pie is Florida's state dessert) before 1949. However, there was a recipe that is very similar to Key Lime Pie that was dated back to 1931. The recipe found in New York originally used lemons instead of limes. It is now believed that this New York recipe made its way to the southern states, such as Florida, and the lemon was replaced with the regional key lime, creating the dessert that we all (especially Florida natives) know and love today! 
-        </p>
-        <div class="page-img">
-          <img src="../images/steveskeylimepie_redhook_brooklyn_nyc_marleywhite_0366__large.jpg" alt="Steve's Key Lime Pie Store in Brooklyn">
-        </div>
-       <!--Discusses controversy around whether Key Lime Pie is from NYC or not-->
-       <br>
-        <h2>Not All Agree...</h2>
-        <p>
-            While there is proof to show that the Key Lime Pie originated from NYC, Florida natives and other southerners are not too keen on the idea that their beloved dessert may have not come from the south. Floridians have dug up evidence that could support the idea that Key Lime Pie came from Florida. There was a woman who went by the name of "Aunt Sally" who worked in the Curry Mansion, which is in Key West, Florida. Records have shown that Aunt Sally did exist back in 1890, which is also the year that Aunt Sally supposedly created the Key Lime Pie recipe. She may have had access to ingredients like sweetened condensed milk in 1890, making the history of this dessert more ambiguous. 
-        </p>
-        <div class="page-img"> 
-          <img src="../images/curry-mansion-inn-key-west-florida.jpg" alt="The Curry Mansion, where Key Lime Pie may have been invented in Florida">
-        </div>
-        
+        </nav>
+      </div>
 
-        <h2>No Matter the History, Key Lime Pie is Delicious!</h2>
-        <div class="page-img"> 
-          <img src="../images/key-lime-cheesecake3.jpg" alt="Key Lime Cheesecake - a Fun Twist on a Classic">
-        </div>
+      <h1>The History of Key Lime Pie</h1>
+      <!--Introduces the fact that Key Lime Pie may be from New York-->
+      <h2>The Classic Southern Dessert is from...New York?</h2>
+      <p>
+          That's right! Although there is no definitive answer as to where Key Lime Pie originates, there is strong evidence that shows that it could be originally from New York! Research shows that there was no Key Lime Pie or similar dessert recipe in the Florida region (it used to be widely believed that Key Lime Pie originated from Florida, as Key Lime Pie is Florida's state dessert) before 1949. However, there was a recipe that is very similar to Key Lime Pie that was dated back to 1931. The recipe found in New York originally used lemons instead of limes. It is now believed that this New York recipe made its way to the southern states, such as Florida, and the lemon was replaced with the regional key lime, creating the dessert that we all (especially Florida natives) know and love today! 
+      </p>
+      <img class="page-img" src="../images/steveskeylimepie_redhook_brooklyn_nyc_marleywhite_0366__large.jpg" alt="Steve's Key Lime Pie Store in Brooklyn" width=35%>
+      <!--Discusses controversy around whether Key Lime Pie is from NYC or not-->
+      <br>
+      <h2>Not All Agree...</h2>
+      <p>
+          While there is proof to show that the Key Lime Pie originated from NYC, Florida natives and other southerners are not too keen on the idea that their beloved dessert may have not come from the south. Floridians have dug up evidence that could support the idea that Key Lime Pie came from Florida. There was a woman who went by the name of "Aunt Sally" who worked in the Curry Mansion, which is in Key West, Florida. Records have shown that Aunt Sally did exist back in 1890, which is also the year that Aunt Sally supposedly created the Key Lime Pie recipe. She may have had access to ingredients like sweetened condensed milk in 1890, making the history of this dessert more ambiguous. 
+      </p>
+      <img class="page-img" src="../images/curry-mansion-inn-key-west-florida.jpg" alt="The Curry Mansion, where Key Lime Pie may have been invented in Florida" width=35%>
+      
+
+      <h2>No Matter the History, Key Lime Pie is Delicious!</h2>
+      <img class="page-img" src="../images/key-lime-cheesecake3.jpg" alt="Key Lime Cheesecake - a Fun Twist on a Classic" width=20%>
+
+      <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script src="../scripts/script.js"></script>
         
     </body>
 </html>

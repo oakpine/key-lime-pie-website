@@ -19,50 +19,65 @@
 
     <!-- This is the body-->
     <body>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../html/key_limes.html">Key Limes</a></li>
+        <li><a href="../html/condensed_milk.html">Condensed Milk</a></li>
+        <li><a href="../html/crust.html">Crust</a></li>
+        <li><a href ="../html/eggs.html">Eggs</a></li>
+        <li><a href ="../html/sugar.html">Sugar</a></li>
+      </ul>
 
-        <h2>The Crust</h2>
-        <p>There are two main key lime pie crusts: graham cracker crust and pastry crust. Proponents of both types argue that their crust is the better one, with compelling arguments brought up for either delectable crust.</p>
-
-        <h3>Pastry Crust</h3>
-        <p>Pastry crusts are actually the original version of key lime pie. Any native of Key West, where key lime pie may have originated, who uses family recipe from before the 1930s can tell you that their recipe uses pastry crust. Pastry crust has rather dimmed in popularity over the years, but there are still many who prefer a light, flakey crust on their key lime pie.</p>
-
-        <p>Making the pastry dough for the pastry crust generally invovles the combination of flour and cold butter. Sugar, salt, and ice-cold water are also often used.</p>
-        <div class="page-img">
-          <img src="../images/pastry_crust.jpg" alt="key lime pie with pastry crust">
-        </div>
-        
-
-        <h3>Graham Cracker Crust</h3>
-        <p>In 1928, Monroe Boston Strause, a renowned piemaker, was looking for a better crust for custard pies. His solution was the graham cracker crust. Graham cracker crusts take less time to prepare, and they also store long and don't get soggy under the wet custard. These were all important benefits, especially for commercial key lime pie preparation. People also loved the taste, and graham cracker crusts began to catch on.</p>
-
-        <figure>
-          <div class="page-img">
-            <img src="../images/monroe_strause.jpg" alt="Monroe Boston Strause">
+      <!-- Navigation Bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper nav">
+            <a href="index.html" class="brand-logo nav-logo">Key Lime Pie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="../html/history.html">History</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ingredients</a></li>
+              <li><a href="../html/world.html">Around the World</a></li>
+              <li><a href="../html/variations.html">Variations</a></li>
+            </ul>
           </div>
-            
-            <figcaption>Monroe Boston Strause</figcaption>
-        </figure>
+        </nav>
+      </div>
 
-        <p>Graham cracker crust is now the most popular crust for key lime pie. It is made with crushed graham crackers, and it is often brought together with butter or vegetable oil and sweetened with sugar.</p>
-        <div class="page-img">
-          <img src="../images/graham_cracker_crust.jpg" alt="key lime pie with graham cracker crust">
-        </div>
-       
+      <h2>The Crust</h2>
+      <p>There are two main key lime pie crusts: graham cracker crust and pastry crust. Proponents of both types argue that their crust is the better one, with compelling arguments brought up for either delectable crust.</p>
 
-       
+      <h3>Pastry Crust</h3>
+      <p>Pastry crusts are actually the original version of key lime pie. Any native of Key West, where key lime pie may have originated, who uses family recipe from before the 1930s can tell you that their recipe uses pastry crust. Pastry crust has rather dimmed in popularity over the years, but there are still many who prefer a light, flakey crust on their key lime pie.</p>
 
-        <h3>Alternative crusts</h3>
-        <p>Your key lime pie experience isn't limited to only the two most popular options. There are many new kinds of crust popping up, including ones made of cookies, nuts, cereals, and pretzals. In the end, key lime pies taste great with almost any kind of crust!</p>
-        <p>Which crust do you prefer?</p> 
-        <options>
-          <a class="waves-effect waves-light btn-large">Pastry</a>
-        <a class="waves-effect waves-light btn-large">Graham Cracker</a>
-        <a class="waves-effect waves-light btn-large">Other</a>
-        </options>
+      <p>Making the pastry dough for the pastry crust generally invovles the combination of flour and cold butter. Sugar, salt, and ice-cold water are also often used.</p>
+      <img class="page-img" src="../images/pastry_crust.jpg" alt="key lime pie with pastry crust" width=40%>
+      
+
+      <h3>Graham Cracker Crust</h3>
+      <p>In 1928, Monroe Boston Strause, a renowned piemaker, was looking for a better crust for custard pies. His solution was the graham cracker crust. Graham cracker crusts take less time to prepare, and they also store long and don't get soggy under the wet custard. These were all important benefits, especially for commercial key lime pie preparation. People also loved the taste, and graham cracker crusts began to catch on.</p>
+
+      <figure>
+        <img class="page-img" src="../images/monroe_strause.jpg" alt="Monroe Boston Strause" width=40%>
+          <figcaption>Monroe Boston Strause</figcaption>
+      </figure>
+
+      <p>Graham cracker crust is now the most popular crust for key lime pie. It is made with crushed graham crackers, and it is often brought together with butter or vegetable oil and sweetened with sugar.</p>
+      <img class="page-img" src="../images/graham_cracker_crust.jpg" alt="key lime pie with graham cracker crust" width=35%>
+
+      <h3>Alternative crusts</h3>
+      <p>Your key lime pie experience isn't limited to only the two most popular options. There are many new kinds of crust popping up, including ones made of cookies, nuts, cereals, and pretzals. In the end, key lime pies taste great with almost any kind of crust!</p>
+      <p>Which crust do you prefer?</p> 
+      <options>
+        <a class="waves-effect waves-light btn-large">Pastry</a>
+      <a class="waves-effect waves-light btn-large">Graham Cracker</a>
+      <a class="waves-effect waves-light btn-large">Other</a>
+      </options>
         
       <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script src="../scripts/script.js"></script>
 
     </body>
   </html>

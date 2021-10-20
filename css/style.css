@@ -2,6 +2,10 @@
     font-family: 'Gotham';
 }
 
+figcaption {
+    text-align: center;
+}
+
 p, table {
     font-family: 'Gotham Light', sans-serif; 
 }
@@ -201,8 +205,4 @@ body, html {
    /* overflow: scroll; */
     max-width: 600px;
     max-height: 600px;
-}
-
-.key-lime-caption {
-    text-align: center;
 }
