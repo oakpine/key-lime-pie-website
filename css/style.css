@@ -156,7 +156,7 @@ body, html {
     position: relative;
     transition: background-image 3s;
   }
-.mega-text-eggs {
+.mega-text-black {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -168,6 +168,16 @@ body, html {
 .mega-image-eggs:hover {
     background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/mega_egg.JPG");
 }
+
+.mega-image-history {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(218, 216, 216, 0.5)), url("../images/key_west_history.png");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .mega-image-key-limes {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/key-lime-benefits_1000x.jpg");
     height: 70%;
@@ -176,6 +186,15 @@ body, html {
     background-size: cover;
     position: relative;
   }
+
+  .mega-image-milk {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 232, 152, 0.5)), url("../images/condensed_milk_header.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .mega-image-world {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/EarthGlobe01.jpg1D6C1C05-3A76-4971-B028-6B5333FF5289Default.jpg");
