@@ -144,7 +144,7 @@ th, td {
     background-size: cover;
     position: relative;
 }
-
+/*
 .mega-image-index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/bigkeylime.jpeg");
     height: 70%;
@@ -152,7 +152,7 @@ th, td {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+}*/
 
 .mega-image-key-limes {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/key-lime-benefits_1000x.jpg");
@@ -248,10 +248,9 @@ th, td {
 
 .parallax-container {
     height: 100%;
-    background-position: center;
+    position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/bigkeylime.jpeg");
     background-repeat: no-repeat;
 }
 
@@ -261,5 +260,6 @@ th, td {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;  
+    color:whitesmoke;  
 }
+
