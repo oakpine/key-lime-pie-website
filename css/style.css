@@ -186,6 +186,24 @@ body, html {
     position: relative;
 }
 
+.mega-image-sugar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/5b9b8edf3c00005b00096fbb.jpeg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mega-image-sources {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/88572076-huge-1030x671.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .mega-text {
     text-align: center;
     position: absolute;
