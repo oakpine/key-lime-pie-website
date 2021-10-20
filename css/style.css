@@ -150,6 +150,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    transition: background-image 3s;
   }
 .mega-text-eggs {
     text-align: center;
