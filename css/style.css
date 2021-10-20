@@ -138,14 +138,24 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;  
   }
-.mega-image-index {
+
+  .mega-image-index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/bigkeylime.jpeg");
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
+
+.mega-image-crust {
+    background-image: linear-gradient(rgba(250, 240, 230, 0.2), rgba(166, 123, 91, 0.5)), url("../images/crust_header.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .mega-image-eggs {
     background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/raw-eggs.jpeg");
@@ -156,6 +166,7 @@ body, html {
     position: relative;
     transition: background-image 3s;
   }
+
 .mega-text-black {
     text-align: center;
     position: absolute;
@@ -189,6 +200,15 @@ body, html {
 
   .mega-image-milk {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 232, 152, 0.5)), url("../images/condensed_milk_header.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mega-image-variations {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(215, 236, 120, 0.5)), url("../images/variations_header.jpg");
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
