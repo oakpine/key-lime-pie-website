@@ -49,6 +49,69 @@ th, td {
     text-align: center;
 }
 
+.country-australia{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(255, 255, 255, 0.5)), url("../images/Combined-Australian-NZ-Flag-GettyImages-666304802.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-england {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(255, 70, 70, 0.5)), url("../images/Flag-England.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-france{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(68, 65, 255, 0.5)), url("../images/france-162295__480.png");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-italy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(52, 250, 45, 0.5)), url("../images/Italy_Flag_Colours.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-iran {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(56, 196, 52, 0.5)), url("../images/2000px-Flag_of_Iran_\(official\).svg.png");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-mexico {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(235, 47, 47, 0.5)), url("../images/Mexico_flag-3.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.country-spain{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 228, 28, 0.5)), url("../images/Bandera_de_España.svg.png");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .ingredient_list {
     float: left;
     overflow: hidden;
@@ -269,6 +332,32 @@ th, td {
 }
 
 .parallax-container {
+    height: 70%;
+    position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax-text-black {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+
+.parallax-text-white {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:whitesmoke;
+}
+
+.video-container {
     height: 100%;
     position: center;
     background-attachment: fixed;
@@ -276,75 +365,11 @@ th, td {
     background-repeat: no-repeat;
 }
 
-.parallax-container h1 {
+.video-container h1 {
     text-align: center;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:whitesmoke;  
-}
-
-.country-france{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(68, 65, 255, 0.5)), url("../images/france-162295__480.png");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-italy {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(52, 250, 45, 0.5)), url("../images/Italy_Flag_Colours.jpg");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-iran {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(56, 196, 52, 0.5)), url("../images/2000px-Flag_of_Iran_\(official\).svg.png");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-england {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(255, 70, 70, 0.5)), url("../images/Flag-England.jpg");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-mexico {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(235, 47, 47, 0.5)), url("../images/Mexico_flag-3.jpg");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-spain{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 228, 28, 0.5)), url("../images/Bandera_de_España.svg.png");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.country-australia{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(255, 255, 255, 0.5)), url("../images/Combined-Australian-NZ-Flag-GettyImages-666304802.jpg");
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
 }
