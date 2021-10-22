@@ -112,6 +112,10 @@ th, td {
     position: relative;
 }
 
+#graham_img {
+    display: none;
+}
+
 .ingredient_list {
     float: left;
     overflow: hidden;
@@ -301,6 +305,10 @@ th, td {
     margin-left: 10px;
 }
 
+#other_img {
+    display: none;
+}
+
 .page-img {
     display: block;
     margin: auto;
@@ -355,6 +363,14 @@ th, td {
     left: 50%;
     transform: translate(-50%, -50%);
     color:whitesmoke;
+}
+
+#pastry_img {
+    display: none;
+}
+
+.poll {
+    text-align: center;
 }
 
 .video-container {

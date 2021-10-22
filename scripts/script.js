@@ -2,7 +2,25 @@ $(document).ready(function(){
     $('.parallax').parallax(); // image parallax
     $(".dropdown-trigger").dropdown(); // navbar dropdown
     $('.carousel').carousel(); // carousel
+
+    // crust preference buttons
+    $('.pastry_btn').click(function(){
+        $('#graham_img').hide()
+        $('#other_img').hide()
+        $('#pastry_img').css('display', 'block');
+    });
+    $('.graham_btn').click(function(){
+        $('#pastry_img').hide()
+        $('#other_img').hide()
+        $('#graham_img').css('display', 'block');
+    });
+    $('.other_btn').click(function(){
+        $('#graham_img').hide()
+        $('#pastry_img').hide()
+        $('#other_img').css('display', 'block');
+    });
 });
+
 function isElementInViewport(el) {
     if (typeof jQuery == "function" && el instanceof jQuery) {
         el=el[0];
