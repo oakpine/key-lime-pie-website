@@ -273,7 +273,6 @@ th, td {
     border: 1em solid white;
     border-radius: .25em;
     box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-    width: 90%
 }
 
 .page-img.is-visible {
