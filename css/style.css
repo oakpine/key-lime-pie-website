@@ -161,8 +161,7 @@ th, td {
     text-align: center;
 }
 
-.mega-image-crust {
-    background-image: linear-gradient(rgba(250, 240, 230, 0.2), rgba(166, 123, 91, 0.5)), url("../images/crust_header.jpg");
+.mega-image {
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,13 +169,12 @@ th, td {
     position: relative;
 }
 
+.mega-image-crust {
+    background-image: linear-gradient(rgba(250, 240, 230, 0.2), rgba(166, 123, 91, 0.5)), url("../images/crust_header.jpg");
+}
+
 .mega-image-eggs {
     background-image: linear-gradient(rgb(255, 255, 255, 0.192), rgba(255, 187, 0, 0.863)), url("../images/raw-eggs.jpeg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     transition: background-image 3s;
   }
 
@@ -186,11 +184,6 @@ th, td {
 
 .mega-image-history {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(218, 216, 216, 0.5)), url("../images/key_west_history.png");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 /*
 .mega-image-index {
@@ -204,56 +197,26 @@ th, td {
 
 .mega-image-key-limes {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/key-lime-benefits_1000x.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   }
 
 .mega-image-milk {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 232, 152, 0.5)), url("../images/condensed_milk_header.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .mega-image-sources {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/88572076-huge-1030x671.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .mega-image-sugar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/5b9b8edf3c00005b00096fbb.jpeg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .mega-image-variations {
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(215, 236, 120, 0.5)), url("../images/variations_header.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .mega-image-world {
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(215, 236, 120, 0.5)), url("../images/EarthGlobe01.jpg1D6C1C05-3A76-4971-B028-6B5333FF5289Default.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .mega-text {
