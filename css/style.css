@@ -21,6 +21,8 @@ h2, h3 {
     font-family: 'Gotham', sans-serif;
     font-weight: 400;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 p {
@@ -159,6 +161,10 @@ th, td {
     font-size: 25px; 
     position: absolute; 
     text-align: center;
+}
+
+.links {
+    margin-left: 3%;
 }
 
 .mega-image {
