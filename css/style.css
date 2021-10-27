@@ -83,6 +83,7 @@ th, td {
     background-size: cover;
     position: relative;
     margin-top: 100px;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .country.australia{
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(157, 160, 184, 0.5)), url("../images/Combined-Australian-NZ-Flag-GettyImages-666304802.jpg");
@@ -115,7 +116,7 @@ th, td {
 }
 
 .country.spain{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 126, 24, 0.5)), url("../images/Bandera_de_España.svg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(250, 126, 24, 0.5)), url("../images/spanish_flag.jpg");
    
 }
 
