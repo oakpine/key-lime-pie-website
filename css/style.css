@@ -65,15 +65,14 @@ th, td {
 
 .carousel {
     box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-    height: 600px;
+    height: 500px;
 }
 
 .carousel-item {
-    width: 400px !important;
-    height: 400px !important;
-    margin-left: -100px;
+    width: 350px !important;
+    height: 350px !important;
     display: block;
-    margin-top: -150px;
+    margin-top: -75px;
     border: 1em solid yellowgreen;
     border-bottom: 8em solid yellowgreen;
     border-radius: .25em;
