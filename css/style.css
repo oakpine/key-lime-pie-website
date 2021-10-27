@@ -49,19 +49,6 @@ table.is-visible {
     opacity: 1;
 }
 
-.carousel {
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-}
-
-.carousel-item {
-    display: block;
-    margin-top: -50px;
-    border: 1em solid yellowgreen;
-    border-bottom: 5em solid yellowgreen;
-    border-radius: .25em;
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-}
-
 table {
     border: 3px solid slategrey;
     box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
@@ -74,6 +61,23 @@ table thead {
 
 th, td {
     text-align: center;
+}
+
+.carousel {
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    height: 600px;
+}
+
+.carousel-item {
+    width: 400px !important;
+    height: 400px !important;
+    margin-left: -100px;
+    display: block;
+    margin-top: -150px;
+    border: 1em solid yellowgreen;
+    border-bottom: 8em solid yellowgreen;
+    border-radius: .25em;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 
 .country {
