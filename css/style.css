@@ -19,7 +19,7 @@ h1 {
 
 h2, h3 {
     font-family: 'Gotham', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -41,6 +41,30 @@ table {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    transition: opacity .3 .25s ease-out;
+    will-change: opacity;
+}
+
+table.is-visible {
+    opacity: 1;
+}
+
+.carousel {
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+}
+
+.carousel-item {
+    display: block;
+    margin-top: -50px;
+    border: 1em solid yellowgreen;
+    border-bottom: 5em solid yellowgreen;
+    border-radius: .25em;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+}
+
+table {
+    border: 3px solid slategrey;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 
 table thead {
@@ -248,7 +272,7 @@ th, td {
 }
 
 .nav a:hover, .ingredient_list:hover .ingredients {
-    background-color: forestgreen;
+    background-color: gold;
 }
 
 .nav-logo {
@@ -279,6 +303,7 @@ th, td {
     opacity: 1;
     transform: rotateZ(-2deg);
 }
+
 
 .parallax-container {
     height: 70%;
