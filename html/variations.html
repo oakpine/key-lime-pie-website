@@ -41,55 +41,69 @@
 
     <!--Header for Page-->
     <div class="parallax-container mega-image mega-image-variations"> 
-      <h1 class="parallax-text-black">Key Lime Pie Variations</h3>     
+      <h1 class="parallax-text-black">Key Lime Pie Community Recipes</h3>     
     </div>
 
     <!--Main Page-->
 
     <br>
-    <h3> You do not have to limit yourself to just pie to get a great key lime flavor! Here are some recipes that are similar to key lime pie that you can experiment around with. Enjoy!</h3>
-
-    <!--Links to recipes-->
-    <div class="links">
-      <a href="https://bakerbynature.com/key-lime-coconut-donuts/" target="_blank">Key Lime Coconut Donuts</a>
-          <br>
-      <a href="https://belleofthekitchen.com/key-lime-cheesecake-trifle/" target="_blank">Key Lime Cheesecake Trifle</a>
-      <br>
-      <a href="https://www.savingdessert.com/key-lime-pie-ice-cream-sandwiches/" target="_blank">Key Lime Pie Ice Cream Sandwiches</a>
-      <br>
-      <a href="https://www.womansday.com/food-recipes/food-drinks/recipes/a10058/key-lime-tarts-121160/" target="_blank">Key Lime Tarts</a>
-      <br>
-      <a href="https://www.womansday.com/food-recipes/food-drinks/recipes/a11679/lime-coconut-coins-recipe-wdy1212/" target="_blank"> Key Lime Coconut Coins</a>
-      <br>
-      <a href="https://www.womansday.com/food-recipes/food-drinks/recipes/a53696/key-lime-poke-cake/" target="_blank">Key Lime Poke Cake</a>
-      <br>
-      <a href="https://www.crazyforcrust.com/key-lime-cheesecake/" target="_blank">Key Lime Cheesecake</a>
-      <br>
-      <a href="https://sallysbakingaddiction.com/key-lime-pie-squares/" target="_blank">Key Lime Pie Squares</a>
-      <br>
-      <a href="https://www.katiescucina.com/key-lime-pie-milkshakes/" target="_blank">Key Lime Pie Milkshakes</a>
-      <br>
-      <a href="https://www.yourhomebasedmom.com/the-best-key-lime-bars/" target="_blank">Key Lime Bars</a>
-      <br>
-      <a href="https://www.barbarabakes.com/key-lime-pound-cake/" target="_blank">Key Lime Pound Cake</a>
-      <br>
-      <a href="https://littlespicejar.com/key-lime-pie-bars/" target="_blank">Key Lime Bars (part 2)</a>
-      <br>
-      <a href="https://thissillygirlskitchen.com/key-lime-raspberry-sandwich-cookies/" target="_blank">Key Lime Raspberry Sandwich Cookies</a>
-      <br>
-      <a href="https://www.thekitchn.com/recipe-key-lime-pie-smores-recipes-from-the-kitchn-192833?utm_source=RSS&utm_medium=feed&utm_campaign=Category/Channel:+Main" target="_blank">Key Lime Smores</a>
-      <br>
-      <a href="http://millionmoments.net/2014/07/bake-key-lime-pie-jar.html" target="_blank">No Bake Key Lime Pie in a Jar</a>
-      <br>
-      <a href="https://sallysbakingaddiction.com/dark-chocolate-key-lime-pie-truffles/
-      " target="_blank">Dark Chocolate Key Lime Pie Truffles</a>
-      <br>
-      <a href="https://www.tasteandtellblog.com/baked-key-lime-pie-donuts-key-lime-blog-party/" target="_blank">Key Lime Pie Donuts</a>
-      <br>
-      <h6>All credits to the owners of these recipes.</h6>
-      <br>
+    <h3> Key Lime Pie Community Recipes</h3>
+    <!--Submission Buttons-->
+    <div class="input-field col s6">
+      <input id="nameText" type="text" class="validate">
+      <label for="nameText">Enter Your Name</label>
     </div>
 
+    <div class="input-field col s6">
+      <input id="recipeText" type="text" class="validate">
+      <label for="recipeText">Enter The Recipe Name</label>
+    </div>
+
+    <div class="input-field col s12">
+      <select id = "tempRecipeSelect">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="Cold/Chilled/Frozen">Cold/Chilled/Frozen</option>
+        <option value="Hot">Hot</option>
+        <option value="Room Temperature">Room Temperature</option>
+      </select>
+      <label>Select a Temperature That Best Fits Your Recipe</label>
+    </div><br>
+  
+    
+    <div class="input-field col s12">
+      <select id = "typeRecipeSelect">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Snack">Snack</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+      <label>Select a Recipe Type That Best Fits Your Recipe</label>
+    </div><br>
+
+    <div class="input-field col s12">
+      <select id = "allergensSelect">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="Peanuts/Treenuts">Peanuts/Treenuts</option>
+        <option value="Eggs">Eggs</option>
+        <option value="Soy">Soy</option>
+        <option value="Dairy">Dairy</option>
+        <option value="None">None</option>
+      </select>
+      <label>Select an Allergen That Your Recipe Has</label>
+    </div><br>
+  
+    <div class="input-field col s6">
+      <input id="linkText" type="text" class="validate">
+      <label for="linkText">Paste Recipe Link Here</label>
+    </div>
+  
+    <a id="insert" class="waves-effect waves-light btn-large"><i class="material-icons left">add_circle</i>INSERT</a>
+    <a id="select" class="waves-effect waves-light btn"><i class="material-icons left">select_all</i>SELECT</a>
+          <a id="update" class="waves-effect waves-light btn"><i class="material-icons left">update</i>UPDATE</a>
+          <a id="delete" class="waves-effect waves-light btn"><i class="material-icons left">delete</i>DELETE</a>
+  
+    
+    <!--Bottom Picture-->
     <img class="page-img show-on-scroll" src="https://www.cookingclassy.com/wp-content/uploads/2019/03/key-lime-pie-01.jpg" alt="Key Lime Pie" width=20%>
     <br>
 
@@ -98,7 +112,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!--Import custom javascript-->
-    <script src="../scripts/materializeScript.js"></script>
+    <script src="../scripts/materializeScripts.js"></script>
     <script type="module" src="../scripts/firebaseScripts.js"></script>
     
   </body>

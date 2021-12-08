@@ -54,3 +54,7 @@ function loop () {
     scroll(loop);
 }
 loop();
+
+$(document).ready(function(){
+    $('select').formSelect();
+  });
