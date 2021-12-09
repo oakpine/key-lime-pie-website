@@ -22,106 +22,108 @@ const db = getDatabase();
 
 var memName, recipe, tempRecipe, typeRecipe, allergens, link
 
- function dataPrep(){
-     memName = document.getElementById('nameText').value;
-     recipe = document.getElementById('recipeText').value;
-     tempRecipe = document.getElementById('tempRecipeSelect').value;
-     typeRecipe = document.getElementById('typeRecipeSelect').value;
-     allergens = document.getElementById('allergensSelect').value;
-     link = document.getElementById('linkText').value;
- }
-
- function InsertData(){
-     set(ref(db, 'recipe/'+memName), {
-         memberName: memName,
-         recipeName: recipe,
-         recipeTemp: tempRecipe,
-         recipeType: typeRecipe, 
-         recipeAllergens: allergens,
-         recipeLink: link
-     })
-     .then(()=>{
-         alert('data stored successfully');
-     })
-     .catch((error)=>{
-         alert('unsuccessful, error'+error)
-     })
- }
-
- function SelectData(){
-     const dbref = ref(db);
-     const name = document.getElementById('nameVal');
-     const recipeTitle = document.getElementById('recipeVal');
-     const temp = document.getElementById('tempRecipeVal');
-     const type = document.getElementById('typeRecipeVal');
-     const allergens = document.getElementById('allergensVal');
-     const link = document.getElementById('linkVal');
-
-
-     get(child(dbref,'recipe/'+memName)).then((snapshot)=>{
-         if(snapshot.exists()){
-             name.textContent = snapshot.val().memberName;
-             recipeTitle.textContent = snapshot.val().recipeName;
-             temp.textContent = snapshot.val().recipeTemp;
-             type.textContent = snapshot.val().recipeType;
-             allergens.textContent = snapshot.val().recipeAllergens;
-             link.textContent = snapshot.val().recipeLink;
-         }
-         else{
-             alert('No data found')
-         }
-        
-     })
-     .catch((error)=>{
-         alert('unsuccessful, error'+error);
-     })
+    function dataPrep(){
+        memName = document.getElementById('nameText').value;
+        recipe = document.getElementById('recipeText').value;
+        tempRecipe = document.getElementById('tempRecipeSelect').value;
+        typeRecipe = document.getElementById('typeRecipeSelect').value;
+        allergens = document.getElementById('allergensSelect').value;
+        link = document.getElementById('linkText').value;
+    }
+   
+    function InsertData(){
+        set(ref(db, 'recipe/'+memName), {
+            memberName: memName,
+            recipeName: recipe,
+            recipeTemp: tempRecipe,
+            recipeType: typeRecipe, 
+            recipeAllergens: allergens,
+            recipeLink: link
+        })
+        .then(()=>{
+            alert('data stored successfully');
+        })
+        .catch((error)=>{
+            alert('unsuccessful, error'+error)
+        })
+    }
+   
+    function SelectData(){
+        const dbref = ref(db);
+        const name = document.getElementById('nameVal');
+        const recipeTitle = document.getElementById('recipeVal');
+        const temp = document.getElementById('tempRecipeVal');
+        const type = document.getElementById('typeRecipeVal');
+        const allergens = document.getElementById('allergensVal');
+        const link = document.getElementById('linkVal');
+   
+   
+        get(child(dbref,'recipe/'+memName)).then((snapshot)=>{
+            if(snapshot.exists()){
+                name.textContent = snapshot.val().memberName;
+                recipeTitle.textContent = snapshot.val().recipeName;
+                temp.textContent = snapshot.val().recipeTemp;
+                type.textContent = snapshot.val().recipeType;
+                allergens.textContent = snapshot.val().recipeAllergens;
+                link.textContent = snapshot.val().recipeLink;
+            }
+            else{
+                alert('No data found')
+            }
+           
+        })
+        .catch((error)=>{
+            alert('unsuccessful, error'+error);
+        })
+   }
+   
+   
+   function UpdateData(){
+       update(ref(db, 'recipe/'+memName),{
+            memberName: memName,
+            recipeName: recipe,
+            recipeTemp: tempRecipe,
+            recipeType: typeRecipe, 
+            recipeAllergens: allergens,
+            recipeLink: link
+       })
+       .then(()=>{
+           alert('data updated successfully');
+       })
+       .catch((error)=>{
+           alert('unsuccessful, error'+error);
+       });
+   }
+   
+   if ($("body").data("title") === "community_recipes") {
+    // Place the logic pertaining to the page with title 'my_page_title' here...
+   function DeleteData(){
+       remove(ref(db, 'recipe/'+memName))
+       .then(()=>{
+           alert('data removed successfully');
+       })
+       .catch((error)=>{
+           alert('unsuccessful, error'+error)
+       })
+   }
+    document.getElementById('insert').onclick = function(){
+        dataPrep();
+        InsertData();
+    }
+    
+    document.getElementById('update').onclick = function(){
+        dataPrep();
+        UpdateData();
+    }
+    
+    document.getElementById('delete').onclick = function(){
+        dataPrep();
+        DeleteData();
+    }
+    
+    document.getElementById('select').onclick = function(){
+        dataPrep();
+        SelectData();
+    }
 }
 
-
-function UpdateData(){
-    update(ref(db, 'recipe/'+memName),{
-         memberName: memName,
-         recipeName: recipe,
-         recipeTemp: tempRecipe,
-         recipeType: typeRecipe, 
-         recipeAllergens: allergens,
-         recipeLink: link
-    })
-    .then(()=>{
-        alert('data updated successfully');
-    })
-    .catch((error)=>{
-        alert('unsuccessful, error'+error);
-    });
-}
-
-
-function DeleteData(){
-    remove(ref(db, 'recipe/'+memName))
-    .then(()=>{
-        alert('data removed successfully');
-    })
-    .catch((error)=>{
-        alert('unsuccessful, error'+error)
-    })
-}
-
-document.getElementById('insert').onclick = function(){
-    dataPrep();
-    InsertData();
-}
-
-document.getElementById('update').onclick = function(){
-    dataPrep();
-    UpdateData();
-}
-
-document.getElementById('delete').onclick = function(){
-    dataPrep();
-    DeleteData();
-}
-
-document.getElementById('select').onclick = function(){
-    dataPrep();
-    SelectData();
-}
