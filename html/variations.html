@@ -97,8 +97,30 @@
       <input id="linkText" type="text" class="validate">
       <label for="linkText">Paste Recipe Link Here</label>
     </div>
-  
-    <a id="insert" class="waves-effect waves-light btn-large"><i class="material-icons left">add_circle</i>INSERT</a>
+    <table class="centered">
+      <thead>
+        <tr>
+            <th>Contributor Name</th>
+            <th>Recipe Name</th>
+            <th>Recipe Temperature</th>
+            <th>Recipe Type</th>
+            <th>Potential Allergens</th>
+            <th>Recipe Link/Instructions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><p id = "nameVal"></p></td>
+          <td><p id = "recipeVal"></p></td>
+          <td><p id = "tempRecipeVal"></p></td>
+          <td><p id = "typeRecipeVal"></p></td>
+          <td><p id = "allergensVal"></p></td>
+          <td><p id = "linkVal"></p></td>
+        </tr>
+      </tbody>
+    </table>
+    <a id="insert" class="waves-effect waves-light btn"><i class="material-icons left">add_circle</i>INSERT</a>
     <a id="select" class="waves-effect waves-light btn"><i class="material-icons left">select_all</i>SELECT</a>
           <a id="update" class="waves-effect waves-light btn"><i class="material-icons left">update</i>UPDATE</a>
           <a id="delete" class="waves-effect waves-light btn"><i class="material-icons left">delete</i>DELETE</a>
