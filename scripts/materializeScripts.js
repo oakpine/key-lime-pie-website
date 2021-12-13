@@ -4,17 +4,20 @@ $(document).ready(function(){
     $('.carousel').carousel(); // carousel
 
     // crust preference buttons
-    $('.pastry_btn').click(function(){ // when pastry button is clicked
+    $('#pastry_btn').click(function(){ // when pastry button is clicked
+        $('.poll_btn').hide() // hide buttons
         $('#graham_img').hide()
         $('#other_img').hide()
         $('#pastry_img').css('display', 'block');
     });
-    $('.graham_btn').click(function(){ // when graham button is clicked
+    $('#graham_btn').click(function(){ // when graham button is clicked
+        $('.poll_btn').hide() // hide buttons
         $('#pastry_img').hide()
         $('#other_img').hide()
         $('#graham_img').css('display', 'block');
     });
-    $('.other_btn').click(function(){ // when other button is clicked
+    $('#other_btn').click(function(){ // when other button is clicked
+        $('.poll_btn').hide() // hide buttons
         $('#graham_img').hide()
         $('#pastry_img').hide()
         $('#other_img').css('display', 'block');
