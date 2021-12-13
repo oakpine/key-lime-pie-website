@@ -257,6 +257,10 @@ th, td {
     text-align: center;
 }
 
+.poll_results {
+    display: none;
+}
+
 .video-container {
     height: 100%;
     position: center;

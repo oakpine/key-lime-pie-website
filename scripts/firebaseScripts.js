@@ -121,6 +121,25 @@ function UpdatePoll(type) {
     });
 }
 
+function DisplayResults() {
+    $('.poll_results').show();
+    const pastry = document.getElementById('pastry_count');
+    const graham = document.getElementById('graham_count');
+    const other = document.getElementById('other_count');
+    const dbref = ref(db);
+
+    // Get poll counts
+    get(child(dbref,'crustPoll/pastry')).then((snapshot)=>{  
+        pastry.textContent = parseInt(snapshot.val());
+    });
+    get(child(dbref,'crustPoll/graham')).then((snapshot)=>{  
+        graham.textContent = parseInt(snapshot.val());
+    });
+    get(child(dbref,'crustPoll/other')).then((snapshot)=>{  
+        other.textContent = parseInt(snapshot.val());
+    });
+}
+
 if ($("body").data("title") === "community_recipes") {
     document.getElementById('insert').onclick = function(){
         dataPrep();
@@ -146,11 +165,14 @@ else if ($("body").data("title") === "crust") {
     // Poll buttons
     document.getElementById('pastry_btn').onclick = function(){
         UpdatePoll('pastry');
+        setTimeout(() => { DisplayResults(); }, 1000);
     }
     document.getElementById('graham_btn').onclick = function(){
         UpdatePoll('graham');
+        setTimeout(() => { DisplayResults(); }, 1000);
     }
     document.getElementById('other_btn').onclick = function(){
         UpdatePoll('other');
+        setTimeout(() => { DisplayResults(); }, 1000);
     }
 }
