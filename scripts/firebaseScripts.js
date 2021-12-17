@@ -118,7 +118,12 @@ function UpdatePoll(type) {
         const updates = {};
         updates['/crustPoll/' + type] = value;
         update(ref(db),updates);
-    });
+
+        setTimeout(() => { DisplayResults(); }, 1000); // Display results
+    })
+    .catch((error)=>{
+        alert('unsuccessful, error'+error);
+    })
 }
 
 function DisplayResults() {
@@ -165,14 +170,11 @@ else if ($("body").data("title") === "crust") {
     // Poll buttons
     document.getElementById('pastry_btn').onclick = function(){
         UpdatePoll('pastry');
-        setTimeout(() => { DisplayResults(); }, 1000);
     }
     document.getElementById('graham_btn').onclick = function(){
         UpdatePoll('graham');
-        setTimeout(() => { DisplayResults(); }, 1000);
     }
     document.getElementById('other_btn').onclick = function(){
         UpdatePoll('other');
-        setTimeout(() => { DisplayResults(); }, 1000);
     }
 }
